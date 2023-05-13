@@ -1,0 +1,55 @@
+--Classwork 1
+create table employee(
+    id integer,    
+                                             
+    names varchar,
+    title varchar
+);
+
+insert into employee(id, names, title) VALUES
+(666, 'arnold benedict','super-visor'); 
+
+insert into employee(id, title, names) values(123, 'boss', 'jamie');
+
+
+
+create table mage(
+    id integer,    
+    types varchar,
+    powerlevel integer,
+    schoolOfMind varchar                                        
+);
+
+insert into mage(id, types, powerlevel, schoolOfMind) VALUES
+(666, 'dark', 9999, 'chaotic-evil'); 
+
+insert into mage(id, types, powerlevel, schoolOfMind) values(432, 'dark', 67676,'chaotic-evil');
+
+alter table mage 
+adds belief varchar;
+
+update mage
+set belief = 'dogmatic'
+where id like 666;
+
+
+create table muggle(
+    id integer,
+    mindSet varchar,
+    discernibility float
+);
+
+insert into muggle(id, mindSet, discernibility) VALUES
+(690, 'open', .78); 
+
+insert into muggle(id, discernibility) values(2, 0.1);
+
+insert into muggle(id, mindSet) values(1, 'neurotic');
+
+delete from muggle where id like 2;
+
+delete from muggle where id like 3;
+
+delete table muggle 
+
+
